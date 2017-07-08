@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "711354941926",
+    "firebase_url": "https://bachaotest.firebaseio.com",
+    "project_id": "bachaotest",
+    "storage_bucket": "bachaotest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711354941926:android:d082da506a8cece3",
+        "android_client_info": {
+          "package_name": "com.example.sireesha.bachao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711354941926-j701hj7u22rht6vordabib9pdn0drc2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8avzqZeXdkq3JwobgLilju0MBr87PbAo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

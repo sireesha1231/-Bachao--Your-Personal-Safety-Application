@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editTextName" type="id" />
+    <item name="editTextEmail" type="id" />
+    <item name="editTextUserName" type="id" />
+    <item name="editTextPassword" type="id" />
+    <item name="editTextConfirmPassword" type="id" />
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
+    <item name="buttonView" type="id" />
+    <item name="buttonCurrent" type="id" />
+    <item name="buttonSave" type="id" />
+</resources>

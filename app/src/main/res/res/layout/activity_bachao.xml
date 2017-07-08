@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:clipToPadding="false">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#E3E3E3"
+                android:onClick="goHome"
+                android:text="HOME"
+                android:fontFamily="sans-serif"
+                android:drawableTop="@drawable/home_normal"
+                android:paddingTop="10sp"
+                android:scaleType="fitCenter"
+                android:focusable="true"
+                android:background="@drawable/home_normal" />
+
+            <Button
+                android:id="@+id/imageButton2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/imageButton"
+                android:layout_toRightOf="@+id/imageButton"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#E3E3E3"
+                android:onClick="goContact"
+                android:drawableTop="@drawable/contact_normal"
+                android:paddingTop="10sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CONTACTS"
+                android:scaleType="fitCenter"
+                android:background="@drawable/contact_normal" />
+
+            <Button
+                android:id="@+id/imageButton3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/imageButton4"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_toLeftOf="@+id/imageButton4"
+                android:layout_toStartOf="@+id/imageButton4"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#E3E3E3"
+                android:onClick="goTrack"
+                android:scaleType="fitCenter"
+                android:drawableTop="@drawable/track_normal"
+                android:fontFamily="sans-serif-medium"
+                android:text="TRACK ME"
+                android:background="@drawable/track_normal" />
+
+            <Button
+                android:id="@+id/imageButton4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#E3E3E3"
+                android:onClick="goSettings"
+                android:fontFamily="sans-serif-medium"
+                android:drawableTop="@drawable/settings_normal"
+                android:paddingTop="10sp"
+                android:text="SETTINGS"
+                android:scaleType="fitCenter"
+                android:background="@drawable/settings_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_id"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Hi! Are you okay?"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/white"
+                android:textColorHighlight="@android:color/primary_text_dark"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+
+            <Button
+                android:id="@+id/buttonFollowed"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:paddingTop="5dp"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:background="@drawable/message_send"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:drawableTop="@drawable/message_send"
+                android:fontFamily="sans-serif-medium"
+                android:scaleType="fitCenter"
+                android:text="I'm being followed" />
+
+            <Button
+                android:id="@+id/buttonHouse"
+                android:layout_width="0dp"
+                android:paddingTop="5dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:background="@drawable/message_send"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:drawableTop="@drawable/message_send"
+                android:fontFamily="sans-serif-medium"
+                android:scaleType="fitCenter"
+                android:text="There is someone in the house" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <Button
+                android:id="@+id/buttonLoudNoises"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:paddingTop="5dp"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/message_send"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:drawableTop="@drawable/message_send"
+                android:fontFamily="sans-serif-medium"
+                android:scaleType="fitCenter"
+                android:text="I hear loud noises in my vicinity" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:paddingTop="5dp"
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/message_send"
+                android:backgroundTint="@android:color/holo_orange_light"
+                android:drawableTop="@drawable/red_car"
+                android:fontFamily="sans-serif-medium"
+                android:scaleType="fitCenter"
+                android:text="Call me a Red Car" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <Button
+                android:id="@+id/alert_911"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:paddingTop="5dp"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/message_send"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:drawableTop="@drawable/alert_911"
+                android:fontFamily="sans-serif-medium"
+                android:scaleType="fitCenter"
+                android:text="Alert 911" />
+
+            <Button
+                android:id="@+id/Siren"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/message_send"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:drawableTop="@drawable/siren"
+                android:fontFamily="sans-serif-medium"
+                android:scaleType="fitCenter"
+                android:text="Ring Siren" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

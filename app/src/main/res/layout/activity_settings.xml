@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#E3E3E3"
+                android:onClick="goHome"
+                android:text="HOME"
+                android:fontFamily="sans-serif"
+                android:drawableTop="@drawable/home_normal"
+                android:paddingTop="10sp"
+                android:scaleType="fitCenter"
+                android:focusable="true"
+                android:background="@drawable/home_normal" />
+
+            <Button
+                android:id="@+id/imageButton2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/imageButton"
+                android:layout_toRightOf="@+id/imageButton"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#E3E3E3"
+                android:onClick="goContact"
+                android:drawableTop="@drawable/contact_normal"
+                android:paddingTop="10sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CONTACTS"
+                android:scaleType="fitCenter"
+                android:background="@drawable/contact_normal" />
+
+            <Button
+                android:id="@+id/imageButton3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/imageButton4"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_toLeftOf="@+id/imageButton4"
+                android:layout_toStartOf="@+id/imageButton4"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#E3E3E3"
+                android:onClick="goTrack"
+                android:scaleType="fitCenter"
+                android:drawableTop="@drawable/track_normal"
+                android:fontFamily="sans-serif-medium"
+                android:text="TRACK ME"
+                android:background="@drawable/track_normal" />
+
+            <Button
+                android:id="@+id/imageButton4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#A0A0A0"
+                android:onClick="goSettings"
+                android:fontFamily="sans-serif-medium"
+                android:drawableTop="@drawable/settings_pressed"
+                android:paddingTop="10sp"
+                android:text="SETTINGS"
+                android:scaleType="fitCenter"
+                android:background="@drawable/settings_pressed"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif"
+            android:text="User Profile"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="sans-serif"
+                android:text="Admin"
+                android:textSize="18sp">
+            </TextView>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <Button
+                android:id="@+id/tutorial"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:drawableRight="@drawable/guide"
+                android:padding="26dp"
+                android:text="Tutorial"
+                android:onClick="goTutorial1"
+                android:textSize="24sp"
+                android:background="#e3e3e3"/>
+
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/Logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:paddingTop="5dp"
+            android:onClick="goWelcome"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:text="Logout" />
+
+    </LinearLayout>
+
+</ScrollView>

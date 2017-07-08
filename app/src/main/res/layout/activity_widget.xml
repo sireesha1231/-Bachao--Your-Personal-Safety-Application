@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+    android:layout_height="match_parent"
+
+    android:background="#55000000">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/logo"/>
+    <Button
+        android:id="@+id/actionButton"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:drawableTop="@drawable/alert_911"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Emergency!"/>
+
+</LinearLayout>

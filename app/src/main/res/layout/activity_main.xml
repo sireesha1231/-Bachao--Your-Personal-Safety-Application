@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@android:style/Widget.Holo.Light.ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:fillViewport="false"
+    android:visibility="visible">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:background="@drawable/home_pressed"
+                android:backgroundTint="#A0A0A0"
+                android:drawableTop="@drawable/home_pressed"
+                android:focusable="true"
+                android:fontFamily="sans-serif"
+                android:onClick="goHome"
+                android:paddingTop="10sp"
+                android:scaleType="fitCenter"
+                android:text="HOME" />
+
+            <Button
+                android:id="@+id/imageButton2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/imageButton"
+                android:layout_toRightOf="@+id/imageButton"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:background="@drawable/contact_normal"
+                android:backgroundTint="#E3E3E3"
+                android:drawableTop="@drawable/contact_normal"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="goContact"
+                android:paddingTop="10sp"
+                android:scaleType="fitCenter"
+                android:text="CONTACTS" />
+
+            <Button
+                android:id="@+id/imageButton3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/imageButton4"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_toLeftOf="@+id/imageButton4"
+                android:layout_toStartOf="@+id/imageButton4"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:background="@drawable/track_normal"
+                android:backgroundTint="#E3E3E3"
+                android:drawableTop="@drawable/track_normal"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="goTrack"
+                android:scaleType="fitCenter"
+                android:text="TRACK ME" />
+
+            <Button
+                android:id="@+id/imageButton4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:background="@drawable/settings_normal"
+                android:backgroundTint="#E3E3E3"
+                android:drawableTop="@drawable/settings_normal"
+                android:fontFamily="sans-serif-medium"
+                android:onClick="goSettings"
+                android:paddingTop="10sp"
+                android:scaleType="fitCenter"
+                android:text="SETTINGS" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:drawableRight="@drawable/helpme"
+                android:padding="16dp"
+                android:text="Help Me"
+                android:textSize="24sp"
+                android:onClick="goBachao"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btnSpotCrime"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:drawableLeft="@drawable/spotcrime"
+                android:padding="16dp"
+                android:text="Spot Crime"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

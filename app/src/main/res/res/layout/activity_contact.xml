@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#E3E3E3"
+                android:onClick="goHome"
+                android:text="HOME"
+                android:fontFamily="sans-serif"
+                android:drawableTop="@drawable/home_normal"
+                android:paddingTop="10sp"
+                android:scaleType="fitCenter"
+                android:focusable="true"
+                android:background="@drawable/home_normal" />
+
+            <Button
+                android:id="@+id/imageButton2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/imageButton"
+                android:layout_toRightOf="@+id/imageButton"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#A0A0A0"
+                android:onClick="goContact"
+                android:drawableTop="@drawable/contact_pressed"
+                android:paddingTop="10sp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CONTACTS"
+                android:scaleType="fitCenter"
+                android:background="@drawable/contact_pressed" />
+
+            <Button
+                android:id="@+id/imageButton3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/imageButton4"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_toLeftOf="@+id/imageButton4"
+                android:layout_toStartOf="@+id/imageButton4"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#E3E3E3"
+                android:onClick="goTrack"
+                android:scaleType="fitCenter"
+                android:drawableTop="@drawable/track_normal"
+                android:fontFamily="sans-serif-medium"
+                android:text="TRACK ME"
+                android:background="@drawable/track_normal" />
+
+            <Button
+                android:id="@+id/imageButton4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0.25"
+                android:adjustViewBounds="true"
+                android:backgroundTint="#E3E3E3"
+                android:onClick="goSettings"
+                android:fontFamily="sans-serif-medium"
+                android:drawableTop="@drawable/settings_normal"
+                android:paddingTop="10sp"
+                android:text="SETTINGS"
+                android:scaleType="fitCenter"
+                android:background="@drawable/settings_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_id2"
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:layout_marginRight="20dp"
+                android:text="Please add atleast 3 Emergency Contacts:"
+                android:textColor="@android:color/white"
+                android:textColorHighlight="@android:color/primary_text_dark"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_button_add"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_vertical|center_horizontal"
+                android:onClick="addContact"
+                android:text="+"
+                android:textSize="30dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/contact1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:textSize="18sp"
+                android:layout_marginRight="15dip"
+                android:layout_marginLeft="15dip"
+                android:textColor="#fff"
+                android:text=""/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <Button
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_button_add"
+                android:gravity="center_vertical|center_horizontal"
+                android:fontFamily="sans-serif-medium"
+                android:text="+"
+                android:textSize="30dp"
+                android:onClick="addContact"
+                android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/contact2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:textSize="18sp"
+            android:layout_marginRight="15dip"
+            android:layout_marginLeft="15dip"
+            android:textColor="#fff"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <Button
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_button_add"
+                android:gravity="center_vertical|center_horizontal"
+                android:fontFamily="sans-serif-medium"
+                android:text="+"
+                android:textSize="30dp"
+                android:onClick="addContact"
+                android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/contact3"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:textSize="18sp"
+            android:layout_marginRight="15dip"
+            android:layout_marginLeft="15dip"
+            android:textColor="#fff"
+            android:text=""/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
